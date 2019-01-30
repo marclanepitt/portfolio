@@ -1,0 +1,60 @@
+.pie-nav-wrapper {
+    background-color: #545a5f;
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    border-radius: 20vw;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.pie-nav-wrapper:hover {
+    box-shadow: 0vw 0vw 2vw .1vw grey;
+    animation-name: pulse;
+    animation-duration: .3s;
+    transition: all ease-in-out .1s;
+
+}
+
+
+.pie-nav-el {
+    text-align: center;
+    line-height: 5vw;
+    color:gainsboro;
+    cursor:pointer;
+    font-size: 3vh;
+
+}
+
+
+.pie-nav-el:hover {
+    transition: all ease-in-out .1s;
+}
+.pie-nav-top-left > i {
+    margin-left: .5vw;
+}
+.pie-nav-top-left:hover {
+    transform: translate(-.3vh,-.3vh);
+}
+.pie-nav-top-right > i {
+    margin-right: .5vw;
+}
+.pie-nav-top-right:hover {
+    transform: translate(.3vh,-.3vh);
+}
+.pie-nav-bottom-left > i {
+    margin-left: .5vw;
+}
+.pie-nav-bottom-left:hover {
+    transform: translate(-.3vh,.3vh);
+}
+.pie-nav-bottom-right > i {
+    margin-right: .5vw;
+}
+.pie-nav-bottom-right:hover {
+    transform: translate(.3vh,.3vh);
+}

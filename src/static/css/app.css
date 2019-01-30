@@ -1,0 +1,55 @@
+body {
+    margin:0;
+    padding:0;
+    overflow-y:hidden !important;
+    background-color: #2a3138;
+}
+
+.section {
+    width: 50%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+
+.top-left-corner {
+    background-color: #323a43;
+    float:left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-right-corner {
+    background-color: #2a3138;
+    float: right;
+    right:0;
+    top: 0;
+    position: absolute;
+    
+}
+
+.bottom-left-corner {
+    background-color:#2a3138;
+    float:left;
+    bottom:0;
+    left: 0;
+    position: absolute;
+}
+
+.bottom-right-corner {
+    background-color: #323a43;
+    float:right;
+    bottom:0;
+    right: 0;
+    position: absolute;
+}
+
+.circle-back {
+    color:gainsboro;
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    font-size: 2vw;
+    cursor:pointer;
+}
