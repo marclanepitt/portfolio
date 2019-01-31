@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import CircleArrowBack from '../CircleArrowBack';
 
 export default class Blog extends Component {
+  constructor(props) {
+    super(props);
+
+   
+  }
   render() {
     return (
       <div className="section bottom-left-corner position-2">

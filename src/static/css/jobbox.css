@@ -1,0 +1,46 @@
+.job-box-wrapper {
+    display: inline-block;
+    margin-right: 2vw;
+    width: 13vw;
+    height: 29vh;
+    background-color: whitesmoke;
+    box-shadow: .2vh .3vh .1vh 0vh rgb(68, 68, 68);
+    border-radius: 1vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.job-box-title {
+    font-size: 1.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: gainsboro;
+    border-top-right-radius: 1vh;
+    border-top-left-radius: 1vh;
+    color:black;
+    font-weight: bold;
+}
+
+.job-box-image {
+    height: 18vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position:center;
+    cursor:pointer;
+}
+
+.job-box-duration {
+    padding-top: 2.5vh;
+    font-size: 1.7vh;
+}
+
+.job-description {
+    width: 55%;
+    height: 35vh;
+    background-color:white;
+    margin:auto;
+    margin-top: 7vh;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+}
