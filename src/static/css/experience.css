@@ -1,0 +1,28 @@
+.job-description {
+    width: 40%;
+    height: 35vh;
+    background-color:white;
+    margin:auto;
+    margin-top: -26vh;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+}
+
+.marc-experience-expanded {
+    position: absolute;
+    bottom: 0;
+    left: 13vw;
+    width: 17vw;
+}
+
+.job-description-list {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.2vh;
+    text-align: left;
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+.job-description-item {
+    margin-top: 2vh;
+}

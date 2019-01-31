@@ -9,7 +9,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 1;
+    z-index: 2;
 }
 
 .pie-nav-wrapper:hover {
@@ -57,4 +57,41 @@
 }
 .pie-nav-bottom-right:hover {
     transform: translate(.3vh,.3vh);
+}
+
+.marc-experience {
+    position: absolute;
+    transform: rotate(320deg);
+    top: 30vh;
+    left: 40%;
+    width: 17vh;
+    z-index: 1;
+}
+
+
+.marc-portfolio {
+    position: absolute;
+    transform: rotate(45deg);
+    top: 29vh;
+    left: 51%;
+    width: 17vh;
+    z-index: 1;
+}
+
+.marc-blog {
+    position: absolute;
+    transform: rotate(225deg);
+    top: 52vh;
+    left: 41%;
+    width: 11vh;
+    z-index: 1;
+}
+
+.marc-contact {
+    position: absolute;
+    transform: rotate(130deg);
+    top: 51vh;
+    left: 53%;
+    width: 14vh;
+    z-index: 1;
 }

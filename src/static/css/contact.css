@@ -1,0 +1,30 @@
+.btn-group {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.btn-dark {
+    color:white !important;
+    background-color: #1C2331 !important;
+    border-color: #161c27 !important;
+    margin-left: 2vw;
+}
+
+.business-card-wrapper {
+    width: 30vw;
+    height: 34vh;
+    background-color: whitesmoke;
+    margin:auto;
+    margin-top: 8vh;
+    padding-top: 2vh;
+}
+
+.business-card-image-circle {
+    width: 5vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    margin:auto;
+    border-radius: 100%;
+}

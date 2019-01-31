@@ -1,0 +1,45 @@
+.portfolio-item-wrapper {
+    display: inline-block;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-bottom: 30vh;
+    width: 13vw;
+    height: 29vh;
+    background-color: whitesmoke;
+    box-shadow: .2vh .3vh .1vh 0vh rgb(68, 68, 68);
+    border-radius: 1vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.portfolio-item-image {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.item-info-overlay {
+    position: absolute;
+    height: 20vh;
+    width: 13vw;
+    margin-top: -29vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    color:white;
+    text-align: center;
+    padding-top:9vh;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.item-info-overlay a {
+    text-decoration: none;
+    color:white;
+}
+
+.item-info-overlay a:hover {
+    text-decoration: none;
+    color:white;
+    text-decoration: underline;
+}

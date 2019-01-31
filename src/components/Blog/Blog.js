@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CircleArrowBack from '../CircleArrowBack';
+import "../../static/css/blog.css";
 
 export default class Blog extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class Blog extends Component {
       {this.props.isExpanded && 
         <CircleArrowBack backToNav = {() => this.props.backToNav(2)}/>
       }
+      
       </div>
     )
   }

@@ -1,6 +1,7 @@
 .job-box-wrapper {
     display: inline-block;
     margin-right: 2vw;
+    margin-bottom: 30vh;
     width: 13vw;
     height: 29vh;
     background-color: whitesmoke;
@@ -34,13 +35,3 @@
     font-size: 1.7vh;
 }
 
-.job-description {
-    width: 55%;
-    height: 35vh;
-    background-color:white;
-    margin:auto;
-    margin-top: 7vh;
-    border-top-left-radius: 5vh;
-    border-top-right-radius: 5vh;
-    border-bottom-right-radius: 5vh;
-}
