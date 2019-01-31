@@ -4,6 +4,12 @@ import "../static/css/contact.css";
 import BusinessCard from "../components/BusinessCard.js";
 import marc from "../static/img/marc.jpeg";
 
+var info = {
+  propic: marc,
+  title: "Front End Engineer",
+  slogan: "From Wireframe to Web Application"
+}
+
 export default class Contact extends Component {
   render() {
     return (
@@ -11,7 +17,7 @@ export default class Contact extends Component {
       {this.props.isExpanded && 
         <CircleArrowBack backToNav = {() => this.props.backToNav(3)}/>
       }
-        <BusinessCard propic={marc}/>
+        {/* <BusinessCard info={info}/> */}
       </div>
     )
   }

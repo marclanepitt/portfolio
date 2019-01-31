@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { CSSTransitionGroup } from 'react-transition-group';
 import PieNav from './components/PieNav';
 import Experience from './components/Experience/Experience';
 import Portfolio from './components/Portfolio/Portfolio';
@@ -21,7 +20,23 @@ class App extends Component {
       sections: [<Experience backToNav={this.backToNav}/>, <Portfolio backToNav={this.backToNav}/>, <Blog backToNav={this.backToNav}/>, <Contact backToNav={this.backToNav}/>],
       displayNav:true,
     }
+    
+  }
 
+  componentDidMount() {
+    let location = window.location.href.split("/")[window.location.href.split("/").length-1];
+    let el = location === "experience" ? 0 : location === "portfolio" ? 1 : location === "blog" ? 2 : location === "contact" ? 3 : -1;
+    let getAttribute = function(temp) {
+      return el;
+    }
+    let e = {
+      target: {
+        getAttribute
+      }
+    };
+    if(el >= 0) {
+      this.handleElSelect(e);
+    }
   }
 
   handleElSelect(e) {
@@ -46,6 +61,8 @@ class App extends Component {
     this.setState({
       displayNav:false
     });
+    let urlString = target === 0 ? "experience" : target === 1 ? "portfolio" : target === 2 ? "blog" : target === 3 ? "contact" : "";
+    window.history.replaceState(null, null, "/"+urlString);
   }
 
   backToNav(target) {
@@ -62,6 +79,8 @@ class App extends Component {
     this.setState({
       displayNav:true
     });
+    window.history.replaceState(null, null, "/");
+
   }
 
   render() {

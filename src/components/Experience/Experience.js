@@ -28,7 +28,7 @@ var jobs = [
     logo: uncLogo,
     website: "https://cs.unc.edu/",
     customStyles: {backgroundSize: "auto 40%"},
-    description: ["Designed and developed a poker engine in Javascript w/ JQuery to be used in class assignment",
+    description: ["Designed and developed an event-based poker engine in Javascript w/ JQuery to be used in class assignment",
       "Graded assignments and helped resolve grading issues post feedback",
       "Held office hours to help students with class notes, assignments, and gave final project advice",
       "Helped to develop an introduction to React lecture "]
@@ -87,7 +87,7 @@ export default class Experience extends Component {
       
       {this.props.isExpanded && 
        <div>
-          <img src={marcexperience} className="marc-experience-expanded"/>
+          <img src={marcexperience} alt="" className="marc-experience-expanded"/>
           <div className="job-description">
             <ul className="job-description-list">
             {jobs[this.state.selectedJob].description.map((point) => {

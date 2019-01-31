@@ -15,7 +15,7 @@ export default class PortfolioItem extends Component {
         {this.state.hover &&
             <div className="item-info-overlay">
                 {this.props.item.name} <br/>
-                <a style={{fontSize:'1.5vh'}} target="_blank" href={this.props.item.link}><i class="fa fa-external-link" aria-hidden="true"></i> {this.props.item.link}</a>
+                <a style={{fontSize:'1.5vh'}} target="_blank" rel="noopener noreferrer" href={this.props.item.link}><i class="fa fa-external-link" aria-hidden="true"></i> {this.props.item.link}</a>
             </div>
         }
       </div>

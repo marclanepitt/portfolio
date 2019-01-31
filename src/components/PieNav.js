@@ -25,7 +25,7 @@ export default class PieNav extends Component {
                 style['width'] = '50%';
                 style['height'] = '50%';
                 
-                if(i % 2 == 0) {
+                if(i % 2 === 0) {
                     style['float'] = 'left';
                 } else {
                     style['float'] = 'right';
@@ -52,22 +52,24 @@ export default class PieNav extends Component {
                         style['backgroundColor'] = '#2a3138';
                         className="pie-nav-bottom-right";
                         break;
+                    default:
+                        break;
 
                 }
                 return <div onMouseEnter={()=>{this.setState({showImg: i})}} onMouseLeave={()=>{this.setState({showImg: -1})}} onClick={(e) => {this.props.handleElSelect(e)}} data-position={i} className={"pie-nav-el " + className} key = {i} style={style}>{el}</div>
             })}
         </div>
-        {this.state.showImg == 0 &&
-         <img className= "marc-experience" src={marcexperience} />
+        {this.state.showImg === 0 &&
+         <img className= "marc-experience" alt="" src={marcexperience} />
         }
-        {this.state.showImg == 1 &&
-         <img className= "marc-portfolio" src={marcportfolio} />
+        {this.state.showImg === 1 &&
+         <img className= "marc-portfolio" alt="" src={marcportfolio} />
         }
-        {this.state.showImg == 2 &&
-         <img className= "marc-blog" src={marcblog} />
+        {this.state.showImg === 2 &&
+         <img className= "marc-blog" alt="" src={marcblog} />
         }
-        {this.state.showImg == 3 &&
-         <img className= "marc-contact" src={marccontact} />
+        {this.state.showImg === 3 &&
+         <img className= "marc-contact" alt="" src={marccontact} />
         }
         </div>
     )
